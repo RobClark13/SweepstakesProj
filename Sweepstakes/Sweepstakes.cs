@@ -27,7 +27,10 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-
+            int maxNumber = contestants.Count-1;
+            Random winningNumberRand = new Random();
+            int winningNumber = winningNumberRand.Next(maxNumber);
+            return contestants[winningNumber];
         }
         public void PrintContestantInfo(Contestant contestant)
         {

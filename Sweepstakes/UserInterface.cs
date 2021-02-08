@@ -15,5 +15,11 @@ namespace Sweepstakes
             return userInput;
         }
 
+        public static string PrintContestantInfo()
+        {
+            
+                
+        }
+
     }
 }
