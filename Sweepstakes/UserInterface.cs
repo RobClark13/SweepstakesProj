@@ -15,10 +15,11 @@ namespace Sweepstakes
             return userInput;
         }
 
-        public static string PrintContestantInfo()
+        public static void PrintContestantInfo(Contestant contestant)
         {
-            
-                
+            Console.WriteLine("Contestant's  name is " + contestant.FirstName+ " "+ contestant.LastName);
+            Console.WriteLine("Contestant's email is " + contestant.EmailAddress);
+            Console.ReadLine();
         }
 
     }

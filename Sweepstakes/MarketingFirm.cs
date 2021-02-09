@@ -8,6 +8,16 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
+        private ISweepstakesManager _manager;
 
+        public MarketingFirm(ISweepstakesManager _manager)
+        {
+            this._manager = _manager;
+        }
+        public void CreateSweepstakes()
+        {
+            string sweepstakesName =UserInterface.GetUserInputFor("What is the name of the sweepstakes?");
+            Sweepstakes sweepstakes = new Sweepstakes(sweepstakesName);
+        }
     }
 }
