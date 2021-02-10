@@ -8,6 +8,8 @@ namespace Sweepstakes
 {
     class Simulation
     {
+       //I am using dependecy injection here when I create the Marketing Firm. The benefit of it is that I don't have to create
+       //separate methods to be able to use either the Queue Manager or the Stack Manager.
         public void CreateMarketingFirmWithManager()
         {
             string type = UserInterface.GetUserInputFor("Would you like to use a Queue Manager or Stack Manager for your sweepstakes? Press 1 for Queue or Press 2 for Stack");
